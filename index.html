@@ -1,32 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leetstats</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-    <h1>LeetStats</h1>
-    <div class="userContainer">
+      <h1>LeetStats</h1>
+      <div class="userContainer">
         <p>Enter Your Username Below :</p>
         <div class="inputcontainer">
-            <input type="text" placeholder="type here">
-            <button>search</button>
+          <input type="text" id="input" placeholder="type here" />
+          <button id="button">search</button>
         </div>
+      </div>
+      <div class="statscontainer">
+        <div class="progress">
+          <div class="progress-item">
+            <div class="easy-progress circle">
+              <span id="easy-label"></span>
+              <p>Easy</p>
+            </div>
+          </div>
+          <div class="progress-item">
+            <div class="Medium-progress circle">
+              <span id="Medium-label"></span>
+              <p>Medium</p>
+            </div>
+          </div>
+          <div class="progress-item">
+            <div class="Hard-progress circle">
+              <span id="Hard-label"></span>
+              <p>Hard</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="statscards"></div>
     </div>
-    <div class="statscontainer">
 
-
-    </div>
-    <div class="statscards">
-
-    </div>
-    </div>
-    
-    
-    
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
